@@ -1,0 +1,20 @@
+useEffect(
+    function () {
+    const myCartProductList = [];
+    for (let i = 0; i < productIds.length; i++) {
+      getProductData(productIds[i]).then(function (product) {
+        myCartProductList.push(product);
+        console.log("usefffet wale product list", products);
+
+        if (productIds.length === myCartProductList.length) {
+          setProducts([...myCartProductList])
+          console.log("new product pass list", ...myCartProductList)
+          localStorage.clear(setProducts); 
+         
+
+        }
+
+      }, [])
+       
+    }
+  })

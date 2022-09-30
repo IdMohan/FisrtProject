@@ -1,0 +1,7 @@
+@tailwind base;
+ html, body {
+    font-family:  Segoe UI;
+  }
+@tailwind components;
+@tailwind utilities;
+
